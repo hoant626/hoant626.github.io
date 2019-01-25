@@ -1,0 +1,44 @@
+body {
+  background-color: #490082;
+}
+
+.reg {
+  font-family: ivyjournal, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #f2841f;
+  font-size: 60px;
+}
+
+.sanreg {
+  font-family: ivystyle-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #f8fc00;
+  font-size: 60px;
+}
+
+a {
+  font-family: ivystyle-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+a:link {
+  color: #f8fc00;
+}
+
+a:visited {
+  color: #f2841f;
+}
+
+a:hover {
+  color: #f2841f;
+}
+
+ul {
+  list-style-type: square;
+  color: #f8fc00;
+  font-size: 30px;
+}
