@@ -18,8 +18,20 @@ body {
   font-size: 60px;
 }
 
+.content {
+  display: di;
+}
 
+#computer {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
 
+#mood {
+  position: absolute;
+  left: 35px;
+}
 
 a {
   font-family: aktiv-grotesk, sans-serif;
