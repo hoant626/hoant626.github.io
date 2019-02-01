@@ -1,44 +1,40 @@
-body {
-  background-image: linear-gradient(blue, #1b1464);
-  height: 100%;
+html {
+    background: #blue;
+    background: linear-gradient(blue, #1b1464);
+    background-attachment: fixed;
 }
 
-img {
-  padding: 2%;
+.right {
+  position: absolute;
+  right: 0px;
+  padding: 3%;
+}
+
+.left {
   width: 60%;
+  padding: 1%;
 }
 
-.left1 {
+.l1 {
   width: 75%;
 }
 
-.right3 {
-  position: absolute;
-  right: 0px;
-  padding: 5%;
+.r3 {
   width: 65%;
 }
 
-.left4 {
-  width: 65%
+.l4 {
+  width: 65%;
 }
 
-.right6 {
-  position: absolute;
-  right: 0px;
-  padding: 5%;
-  width: 70%
+.r6 {
+  width: 70%;
 }
 
-.right8 {
-  position: absolute;
-  right: 0px;
-  padding: 5%;
+.r8 {
+  width: 60%;
 }
 
-.right10 {
-  position: absolute;
-  right: 0px;
-  padding: 5%;
-  width:75%
+.r10 {
+  width:75%;
 }

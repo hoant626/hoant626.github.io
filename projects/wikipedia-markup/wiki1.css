@@ -1,0 +1,19 @@
+body {
+  font-family: monospace;
+  color: blue;
+  background-color: black;
+
+}
+
+p {
+  margin-right: 200px;
+  margin-left: 25px;
+}
+
+.blockquote {
+  margin-left: 100px
+}
+
+.map {
+  width: 300px;
+}
