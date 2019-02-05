@@ -1,7 +1,5 @@
 html {
-    background: #blue;
-    background: linear-gradient(blue, #1b1464);
-    background-attachment: fixed;
+    background-image: url("assets/img/back.JPG");
 }
 
 .right {

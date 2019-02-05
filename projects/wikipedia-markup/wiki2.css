@@ -1,0 +1,41 @@
+body {
+  color: #992929;
+  background-color: #f2e9b5;
+
+}
+
+p {
+  margin-right: 700px;
+  margin-left: 25px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+.head {
+  font-family: "Arial Black", Gadget, sans-serif;
+  margin-right: 700px;
+  margin-left: 100px;
+}
+
+
+.blockquote {
+  margin-left: 100px
+}
+
+.map {
+  position: absolute;
+  width: 400px;
+  top: 100px;
+  right:200px;
+
+}
