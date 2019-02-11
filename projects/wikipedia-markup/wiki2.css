@@ -1,6 +1,6 @@
 body {
-  color: #992929;
-  background-color: #f2e9b5;
+  color: #f2e9b5;
+  background-color: #992929;
 
 }
 
@@ -14,11 +14,11 @@ p {
 }
 
 a:link {
-  color: black;
+  color: white;
 }
 
 a:visited {
-  color: black;
+  color: white;
 }
 
 .head {

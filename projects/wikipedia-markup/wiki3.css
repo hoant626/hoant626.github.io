@@ -1,27 +1,28 @@
 body {
-  background: white;
-  font-family: Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
+  background: #0033ff;
+  color: #f722d0;
+  font-family: aktiv-grotesk,sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 p {
   margin-right: 50px;
   margin-left: 600px;
-  color: #7620d8;
   font-size: 20px;
 
 }
 
 a:link {
-  color: #5fcbe2;
+  color: #f722d0;
 }
 
 a:visited {
-  color: #7620d8;
+  color: #f722d0;
 }
 
 .head {
   margin-left: 600px;
-  color: #f722d0;
   font-style: bold;
 }
 

@@ -1,0 +1,64 @@
+html,
+body {
+  height: 100%;
+}
+
+.topright {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 33%
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 33%;
+}
+
+.bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 33%
+}
+
+.box {
+  height: 70px;
+  width: 70px;
+  padding: 20px;
+}
+
+.a {
+  background-color: blue;
+}
+
+.b {
+  background-color: red;
+}
+
+.c {
+  background-color: yellow;
+}
+
+.dot {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.fix {
+  background-color: red;
+  position: fixed;
+}
+
+.fix1 {
+  left: 20%;
+  top:35%;
+}
+
+.fix2 {
+  left: 50%;
+  top:83%;
+}
