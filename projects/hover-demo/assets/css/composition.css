@@ -1,0 +1,100 @@
+p {
+  font-family: "times";
+  font-size: 40px;
+  text-align: justify;
+}
+
+
+.art:hover {
+  font-style: italic;
+}
+
+.talent:hover {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.exploitation:hover {
+  background: orange;
+  color: red;
+}
+
+.pleasure:hover {
+  color: red;
+}
+
+.mind:hover {
+  background: -webkit-radial-gradient(#ccf1ed, #e2cff0, #c9c9e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.beauty {
+  cursor: url(http://ani.cursors-4u.net/symbols/sym-9/sym827.ani), url(http://ani.cursors-4u.net/symbols/sym-9/sym827.png), auto !important;
+}
+
+.fingerprint:hover {
+  cursor: pointer;
+  background: linear-gradient(270deg, #ddc48d, #4d4a45, #956413);
+  background-size: 1000% 1000%;
+  -webkit-animation: slideBackground 2s ease infinite;
+  -moz-animation: slideBackground 2s ease infinite;
+  animation: slideBackground 2s ease infinite;
+}
+  @-webkit-keyframes slideBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+  @-moz-keyframes slideBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+  @keyframes slideBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+
+.nipple:hover {
+  font-size: 12px;
+  color: pink;
+}
+
+.accomplishment:hover {
+  font-style: italic;
+}
+
+.delight:hover {
+  font-style: italic;
+}
+
+.wife:hover {
+  background-color: #dedfcc;
+  border-radius: 20%;
+  color: red;
+}
+
+.me:hover {
+  font-size: 100px;
+  color: blue;
+}
+
+.hours:hover {
+  font-size: 50px;
+}
+
+.product:hover {
+  color: gold;
+}
+
+.month:hover {
+  font-size: 70px;
+  color: green;
+}
+
+.smut:hover {
+  cursor: url(http://www.rw-designer.com/cursor-extern.php?id=37606);
+}
