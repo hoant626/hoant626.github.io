@@ -17,6 +17,151 @@ body {
   background: white;
   margin: 2.5vw auto;
   position: relative;
+  z-index: -2;
 }
 
 /* Your CSS goes here */
+.table {
+  width: 70vw;
+  height: 20vw;
+  transform: skew(50deg);
+  background: black;
+  position: absolute;
+  top: 20vw;
+  left: 12.5vw;
+  z-index: -1;
+}
+
+.bag{
+ background: #1c5ea5;
+ position: absolute;
+}
+
+.btop{
+  width: 20vw;
+  height: 7vw;
+  transform: skew(50deg);
+  left: 25vw;
+  top: 33.1vw;
+}
+
+.bhang{
+  width: 20vw;
+  height: 10vw;
+  left: 29.2vw;
+  top: 40vw;
+}
+
+.pot {
+  position: absolute;
+  height: 10vw;
+  width: 16vw;
+  background-color: #ede7c9;
+  top: 27vw;
+  left: 27vw;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  z-index: 1;
+}
+
+.pottop {
+  position: absolute;
+  border-bottom: 5vw solid #ede7c9;
+  border-left: 5vw solid transparent;
+  border-right: 5vw solid transparent;
+  height: 0;
+  width: 6vw;
+  top: 22vw;
+  left: 27vw;
+  z-index: 1;
+}
+
+.handle {
+  position: absolute;
+  height: 13vw;
+  width: 9vw;
+  border: 1.5vw solid #af7e2a;
+  border-radius: 20%;
+  top: 18vw;
+  left: 35vw;
+  z-index: 0;
+}
+
+.tangerine {
+  width: 4vw;
+  height: 3vw;
+  background: #fc6d00;
+  border-radius: 4vw / 2vw;
+}
+
+.t1{
+  position: absolute;
+  left: 59vw;
+  top: 26vw;
+}
+
+.t2 {
+  position: absolute;
+  left: 61vw;
+  top: 25vw;
+}
+
+.t3{
+  position: absolute;
+  left: 53vw;
+  top: 25vw;
+}
+
+.vase {
+  position: absolute;
+  height: 16vw;
+  width: 6.5vw;
+  background-color: #e8dede;
+  top: 13vw;
+  left: 66vw;
+  z-index: 0;
+}
+
+.flower {
+ background: #d83615;
+ width: 1vw;
+ height: 1vw;
+ position: absolute;
+}
+
+.fa {
+ transform: rotate(60deg);
+}
+
+.fb {
+ transform: rotate(20deg);
+}
+
+.f1 {
+  left: 69vw;
+  top: 8vw;;
+}
+
+.f2 {
+  left: 72vw;
+  top: 10vw;
+}
+
+.f3 {
+  left: 68vw;
+  top: 6vw;
+}
+.f4 {
+  left: 68vw;
+  top: 11vw;
+}
+
+.f5 {
+  left: 66vw;
+  top: 9vw;
+}
+
+.f6 {
+  left: 72vw;
+  top: 7vw;
+}
