@@ -8,13 +8,13 @@
 
 
 body {
-  background-color: black;
+  background-color: #41603a;
 }
 
 .frame {
   width: 95vw;
   height: 57vw;
-  background: white;
+  background: #b7ac7c;
   margin: 2.5vw auto;
   position: relative;
   z-index: -2;
@@ -98,18 +98,31 @@ body {
   position: absolute;
   left: 59vw;
   top: 26vw;
+  z-index: 2;
 }
 
 .t2 {
   position: absolute;
   left: 61vw;
   top: 25vw;
+  z-index: 1;
 }
 
 .t3{
   position: absolute;
   left: 53vw;
   top: 25vw;
+}
+
+.tanstem {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 1vw solid transparent;
+  border-left: 2vw solid #386b28;
+  border-bottom: 1vw solid transparent;
+  top: -1vw;
+  left: 1vw;
 }
 
 .vase {
@@ -164,4 +177,65 @@ body {
 .f6 {
   left: 72vw;
   top: 7vw;
+}
+
+.f7 {
+  left: 65.5vw;
+  top: 6.5vw;
+}
+
+.f8 {
+  left: 70vw;
+  top: 11.5vw;
+}
+
+.f9 {
+  left: 71vw;
+  top: 4vw;
+}
+
+.f10 {
+  left: 66vw;
+  top: 11.5vw;
+}
+
+.stem {
+  height: 10vw;
+  width: .5vw;
+  background: #505943;
+  position: absolute;
+  z-index: -1;
+}
+
+.s1 {
+  left: 67.5vw;
+  top: 6vw;
+  transform: rotate(170deg);
+}
+
+.s2 {
+  left: 71.2vw;
+  top: 4vw;
+  transform: rotate(10deg);
+}
+
+.gator {
+  border-bottom: 4vw solid #7c502a;
+  border-left: 1vw solid transparent;
+  border-right: 1vw solid transparent;
+  height: 0;
+  width: 4vw;
+}
+
+.g1 {
+  left: 70vw;
+  top: 30vw;
+  position: absolute;
+  transform: rotate(180deg);
+}
+
+.g2 {
+  position: relative;
+  top: 3.8vw;
+  left: -1vw;
 }
