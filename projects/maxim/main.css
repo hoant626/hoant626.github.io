@@ -1,0 +1,54 @@
+body {
+  font-family: 'PT Mono', monospace;
+  background-color: #fabc05;
+  color: white;
+  cursor: url("assets/img/cursor.png"), auto;
+}
+
+.top {
+    overflow: hidden;
+    background-color: #ea4235;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 1%;
+    border: 1px dashed #34a853;
+    z-index: 1;
+}
+
+.textop {
+  position: relative;
+  left: 55px;
+}
+
+.main {
+  margin-top: 70px;
+}
+
+.line {
+  border: 1px dashed #34a853;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.row:hover {
+  color: #2e60b2;
+}
+
+.date {
+  position: relative;
+  left: 55px;
+}
+
+.post {
+  position: relative;
+  left: 315px;
+  margin-right: 550px;
+  overflow-wrap: break-word;
+}
