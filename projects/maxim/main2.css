@@ -173,7 +173,7 @@ body {
 }
 
 .april3:hover:after {
-  content: url(assets/img/april3.JPG);
+  content: url(assets/img/april3.jpg);
   left: 75vw;
   top: 430vw;
 }
@@ -185,7 +185,7 @@ body {
 }
 
 .march2:hover:after {
-  content: url(assets/img/march2.gif);
+  content: url(assets/img/march2.GIF);
   left: 80vw;
   top: 460vw;
 }
