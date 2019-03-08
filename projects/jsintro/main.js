@@ -74,8 +74,15 @@ var animal= ["tiger","sun bear", "monkey"];
 var places=["my house", "my bed", "my room"];
 var pokemon=["bulbasaur", "wobbuffet", "turtwig"];
 
-var allArrays = [food, animal, places, pokemon];
+var allArrays = [
+  food,
+  animal,
+  places,
+  pokemon,
+];
 
 for (var i = 0; i < allArrays.length; i++) {
-  allArrays[i]
+  for (var j = 0; j < allArrays.length; j++) {
+    allArrays[i][j]
+  }
 }

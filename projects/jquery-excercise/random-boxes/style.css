@@ -1,0 +1,36 @@
+/* Your styles go here */
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.button {
+  font-size: 40px;
+  padding: 10px 20px;
+  border: 3px black solid;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  border: black 3px solid;
+  padding: 5px;
+  margin: 10px;
+  vertical-align: middle;
+  line-height: 150px;
+  font-size: 50px;
+}
+
+.box.active {
+  background: black;
+  color: white;
+}
