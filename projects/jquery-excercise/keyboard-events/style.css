@@ -3,7 +3,7 @@ body {
   background: black;
 }
 
-img {
+img, p {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
