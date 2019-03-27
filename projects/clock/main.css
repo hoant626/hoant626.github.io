@@ -1,3 +1,7 @@
+body {
+  background-color: #FFF7EF;
+}
+
 .lineContainer {
   display: flex;
   justify-content: space-around;
@@ -7,22 +11,56 @@
 .line {
   background-color: black;
   height: 100vh;
-  width: 2px;
+  width: 5px;
   visibility: hidden;
+  z-index: -2;
 }
 
 .line.active {
   visibility: visible;
 }
 
+.squareContainer {
+  position: absolute;
+  top: 10%;
+  display: grid;
+  width: 90%;
+  grid-gap: 50px 50px;
+  justify-content: space-around;
+  align-content: space-around;
+  grid-template-columns: repeat(10, 20px [col-start]);
+
+}
+
 .square {
   width: 50px;
   height: 50px;
-  position: fixed;
-  background: red;
+  background: #FFA8A5;
+  border: black solid;
   visibility: hidden;
+
 }
 
 .square.active {
   visibility: visible;
+}
+
+.msSquare {
+  height: 150px;
+  width: 150px;
+  border: 5px black solid;
+  position: absolute;
+  z-index: -1;
+}
+
+.sq1 {
+  background:#64AFE0;
+  top: 250px;
+  left: 800px;
+}
+
+.sq2 {
+  background: #A5CEB0;
+  top: 500px;
+  left: 150px;
 }

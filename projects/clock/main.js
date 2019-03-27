@@ -10,32 +10,28 @@ $(function() {
     var h = date.getHours();
     var m = date.getMinutes();
     var s = date.getSeconds();
-    var clockUpdateSpeed = 30; // speed in milliseconds
+    var ms = date.getMilliseconds();
+    var clockUpdateSpeed = 300;
 
-    $('div.line').nextAll().addClass('active');
+    // hour
 
-    console.log(m)
+    $('div.line').nextUntil('div.l' + h).addClass('active');
+    $('div.l'+h).nextAll().removeClass('active');
 
-    var square = $('.square');
-    var random = Math.random() * 100;
+    //minute
+    if (m==0) {
+      $('div.square').removeClass('active');
+    } else {
+      $('div.square').nextUntil('div.s'+ m).addClass('active');
+      $('div.s'+m).nextAll().removeClass('active');
+    }
 
-    $('.square').css('top', random +'%')
-    $('.square').css('left', random +'%')
+    //seconds
+    $('div.square').css('border-width', (s/10)+'px');
 
-    var divsize = ((Math.random()*100) + 50).toFixed();
-    $newdiv = $('<div/>').css({
-           'width':divsize+'px',
-           'height':divsize+'px',
-           'background-color': color
-       });
-    $newdiv.css({
-            'position':'absolute',
-            'left':posx+'px',
-            'top':posy+'px',
-            'display':'none'
-        })
-  $('div.square').nextAll().addClass('active');
+    //ms
 
+    $('div.msSquare').css('transform', 'rotate(' + (360/60 * s) + 'deg)');
     setTimeout(updateClock, clockUpdateSpeed);
   }
   updateClock();
