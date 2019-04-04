@@ -25,7 +25,6 @@ $(function() {
 
 //thumbs
   $('.thumbs').click(function() {
-    console.log("wow");
 
     var activeGradient = $('.card.active img');
 
