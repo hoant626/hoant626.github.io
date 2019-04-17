@@ -2,13 +2,13 @@ $(function() {
   console.log('hey');
 
   //carbon monoxide
-  var carbonUrl = 'http://api.openweathermap.org/pollution/v1/co/0.0,10.0/current.json?appid=54f1d24ad1bd831b44d255287a07a053'
+  var carbonUrl = 'https://api.openweathermap.org/pollution/v1/co/0.0,10.0/current.json?appid=54f1d24ad1bd831b44d255287a07a053'
 
   //sulfur
-  var sulfurUrl = 'http://api.openweathermap.org/pollution/v1/so2/0.0,10.0/current.json?appid=54f1d24ad1bd831b44d255287a07a053'
+  var sulfurUrl = 'https://api.openweathermap.org/pollution/v1/so2/0.0,10.0/current.json?appid=54f1d24ad1bd831b44d255287a07a053'
 
   //nitrogen
-  var nitrogenUrl = 'http://api.openweathermap.org/pollution/v1/no2/0.0,10.0/2016-12-31T12:55:57Z.json?appid=54f1d24ad1bd831b44d255287a07a053'
+  var nitrogenUrl = 'https://api.openweathermap.org/pollution/v1/no2/0.0,10.0/2016-12-31T12:55:57Z.json?appid=54f1d24ad1bd831b44d255287a07a053'
 
   $.get(carbonUrl, function(data) {
     window.data = data;
