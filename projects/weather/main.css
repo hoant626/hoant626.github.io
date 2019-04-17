@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+}
+
+.parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: solid transparent;
+  border-right: solid transparent;
+  border-bottom: solid white;
+}
+
+p {
+  position: fixed;
+  color: white;
+}
+
+.head {
+  top: 20px;
+  left: 25px;
+}
+
+.info {
+  bottom: 20px;
+  right: 25px;
+}
