@@ -39,11 +39,5 @@ $(function() {
     $('.card').eq(number).addClass('active');
   })
 
-//up and down
-  // $('.up').click(function() {
-  //   var number = Math.floor((Math.random() * 49) + 1);
-  //   var activeGradient = $('.card.active img');
-  //   $( '.yes' ).append( activeGradient.clone() );
-  // })
 
 });
