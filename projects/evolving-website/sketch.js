@@ -7,7 +7,7 @@ function setup() {
 
   loadJSON('https://www.movebank.org/movebank/service/public/json?study_id=2911040&individual_local_identifiers[]=1163-1163&sensor_type=gps');
 
-  loadJSON('https://www.movebank.org/movebank/service/public/json?study_id=2911040&ndividual_local_identifiers[]=2131-2131&sensor_type=gps')
+  loadJSON('https://www.movebank.org/movebank/service/public/json?study_id=2911040&ndividual_local_identifiers[]=2131-2131&sensor_type=gps');
 }
 
 function gotData(data){
