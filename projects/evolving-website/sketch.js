@@ -9,7 +9,7 @@ fetch(proxyurl + url) // https://cors-anywhere.herokuapp.com/https://example.com
 .then(contents => console.log(contents))
 .catch(() => console.log("Can’t access " + url + " response. Blocked by browser?"))
 
-)};
+})
 
 function setup() {
   // put setup code here
