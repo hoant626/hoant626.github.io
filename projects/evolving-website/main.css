@@ -1,0 +1,232 @@
+body {
+  background: #005F00;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+p {
+  color: #EE72D3;
+  font-family: lexia-mono, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.info {
+  display: flex;
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  border: solid #EE72D3 5px;
+  padding-left: 10px;
+  background: #005F00;
+  z-index: 10;
+}
+
+.ball {
+  background: #EE72D3;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.ball.active {
+  background: none;
+  background-image: url("assets/img/stripes.svg");
+  background-repeat: repeat;
+}
+
+/*location of balls*/
+
+.aud {
+  left: 10vw;
+  top: 260vh;
+}
+.bgn {
+  left: 35vw;
+  top: 110vh;
+}
+.brl {
+  left:20vw;
+  top: 20vh;
+}
+.cad {
+  left: 70vw;
+  top: 5vh;
+}
+.chf {
+  left: 46vw;
+  top: 80vh;
+}
+.cny {
+  left: 35vw;
+  top: 210vh;
+}
+.czk {
+  left: 75vw;
+  top: 90vh;
+}
+.dkk {
+  left: 80vw;
+  top: 80vh;
+}
+.eur {
+  left: 67vw;
+  top: 90vh;
+}
+.gbp {
+  left: 67vw;
+  top: 70vh;
+}
+.hkd {
+  left:25vw;
+  top: 230vh;
+}
+.hrk {
+  left: 50vw;
+  top: 90vh;
+}
+.huf {
+  left: 55vw;
+  top: 100vh;
+}
+.idr {
+  left: 13vw;
+  top: 230vh;
+}
+.ils {
+  left: 27vw;
+  top: 125vh;
+}
+.inr {
+  left: 25vw;
+  top: 170vh;
+}
+.isk {
+  left: 95vw;
+  top: 50vh;
+}
+.jpy {
+  left: 45vw;
+  top: 268vh;
+}
+.krw {
+  left: 45vw;
+  top: 255vh;
+}
+.mxn {
+  left: 50vw;
+  top: 5vh;
+}
+.myr {
+  left:15vw;
+  top: 200vh;
+}
+.nok {
+  left: 80vw;
+  top: 80vh;
+}
+.nzd {
+  left:1vw;
+  top: 300vh;
+}
+.php {
+  left: 20vw;
+  top: 245vh;
+}
+.pln {
+  left: 65vw;
+  top: 100vh;
+}
+.ron {
+  left: 56vw;
+  top:110vh;
+}
+.rub {
+  left: 88vw;
+  top: 210vh;
+}
+.sek {
+  left: 90vw;
+  top: 100vh;
+}
+.sgd {
+  left: 15vw;
+  top: 210vh;
+}
+.thb {
+  left:23vw;
+  top: 200vh;
+}
+.try {
+  left: 35vw;
+  top: 125vh;
+}
+.zar {
+  left: 11vw;
+  top: 100vh;
+}
+
+/*  SELECT BOX*/
+/* Dropup Button */
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: lexia-mono, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: #005F00;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 25px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #EE72D3 transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #EE72D3 transparent;
+  top: 20px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #EE72D3;
+  padding: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #005F00;
+  border: solid #EE72D3 5px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: #EE72D3;
+  color: #005F00;
+}
+/* END OF SELECT BOX*/
