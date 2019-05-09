@@ -1,5 +1,6 @@
 $(function() {
 
+//api
   var exchange = 'https://api.exchangeratesapi.io/latest?base=USD'
 
   $.get(exchange, function(data) {
@@ -36,7 +37,7 @@ $(function() {
     $('.cny').css("height", cnyNum + 'px');
 
     var czk = data.rates.CZK;
-    var czkNum = czk*(5);
+    var czkNum = czk*(10);
     $('.czk').css("width", czkNum + 'px');
     $('.czk').css("height", czkNum + 'px');
 
@@ -56,7 +57,7 @@ $(function() {
     $('.gbp').css("height", gbpNum + 'px');
 
     var hkd = data.rates.HKD;
-    var hkdNum = hkd*(15);
+    var hkdNum = hkd*(10);
     $('.hkd').css("width", hkdNum + 'px');
     $('.hkd').css("height", hkdNum + 'px');
 
@@ -71,7 +72,7 @@ $(function() {
     $('.huf').css("height", hufNum + 'px');
 
     var idr = data.rates.IDR;
-    var idrNum = idr/15;
+    var idrNum = idr/4;
     $('.idr').css("width", idrNum + 'px');
     $('.idr').css("height", idrNum + 'px');
 
@@ -81,7 +82,7 @@ $(function() {
     $('.ils').css("height", ilsNum + 'px');
 
     var inr = data.rates.INR;
-    var inrNum = inr*(5);
+    var inrNum = inr*(10);
     $('.inr').css("width", inrNum + 'px');
     $('.inr').css("height", inrNum + 'px');
 
@@ -96,12 +97,12 @@ $(function() {
     $('.jpy').css("height", jpyNum + 'px');
 
     var krw = data.rates.KRW;
-    var krwNum = krw/2;
+    var krwNum = krw;
     $('.krw').css("width", krwNum + 'px');
     $('.krw').css("height", krwNum + 'px');
 
     var mxn = data.rates.MXN;
-    var mxnNum = mxn*(5);
+    var mxnNum = mxn*(10);
     $('.mxn').css("width", mxnNum + 'px');
     $('.mxn').css("height", mxnNum + 'px');
 
@@ -121,7 +122,7 @@ $(function() {
     $('.nzd').css("height", nzdNum + 'px');
 
     var php = data.rates.PHP;
-    var phpNum =  php*(5);
+    var phpNum =  php*(10);
     $('.php').css("width", phpNum + 'px');
     $('.php').css("height", phpNum + 'px');
 
@@ -136,7 +137,7 @@ $(function() {
     $('.ron').css("height", ronNum + 'px');
 
     var rub = data.rates.RUB;
-    var rubNum =  rub*(5);
+    var rubNum =  rub*(10);
     $('.rub').css("width", rubNum + 'px');
     $('.rub').css("height", rubNum + 'px');
 
@@ -151,7 +152,7 @@ $(function() {
     $('.sgd').css("height", sgdNum + 'px');
 
     var thb = data.rates.THB;
-    var thbNum =  thb*(5);
+    var thbNum =  thb*(10);
     $('.thb').css("width", thbNum + 'px');
     $('.thb').css("height", thbNum + 'px');
 
@@ -161,85 +162,56 @@ $(function() {
     $('.try').css("height", trNum + 'px');
 
     var zar = data.rates.ZAR;
-    var zarNum =  zar*(5);
+    var zarNum =  zar*(10);
     $('.zar').css("width", zarNum + 'px');
     $('.zar').css("height", zarNum + 'px');
 
-  });
-  var x, i, j, selElmnt, a, b, c;
-  /* Look for any elements with the class "custom-select": */
-  x = document.getElementsByClassName("custom-select");
-  for (i = 0; i < x.length; i++) {
-    selElmnt = x[i].getElementsByTagName("select")[0];
-    /* For each element, create a new DIV that will act as the selected item: */
-    a = document.createElement("DIV");
-    a.setAttribute("class", "select-selected");
-    a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-    x[i].appendChild(a);
-    /* For each element, create a new DIV that will contain the option list: */
-    b = document.createElement("DIV");
-    b.setAttribute("class", "select-items select-hide");
-    for (j = 1; j < selElmnt.length; j++) {
-      /* For each option in the original select element,
-      create a new DIV that will act as an option item: */
-      c = document.createElement("DIV");
-      c.innerHTML = selElmnt.options[j].innerHTML;
-      c.addEventListener("click", function(e) {
-          /* When an item is clicked, update the original select box,
-          and the selected item: */
-          var y, i, k, s, h;
-          s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-          h = this.parentNode.previousSibling;
-          for (i = 0; i < s.length; i++) {
-            if (s.options[i].innerHTML == this.innerHTML) {
-              s.selectedIndex = i;
-              h.innerHTML = this.innerHTML;
-              y = this.parentNode.getElementsByClassName("same-as-selected");
-              for (k = 0; k < y.length; k++) {
-                y[k].removeAttribute("class");
-              }
-              this.setAttribute("class", "same-as-selected");
-              break;
-            }
-          }
-          h.click();
-      });
-      b.appendChild(c);
-    }
-    x[i].appendChild(b);
-    a.addEventListener("click", function(e) {
-      /* When the select box is clicked, close any other select boxes,
-      and open/close the current select box: */
-      e.stopPropagation();
-      closeAllSelect(this);
-      this.nextSibling.classList.toggle("select-hide");
-      this.classList.toggle("select-arrow-active");
-    });
-  }
+    $('.ball').click(function() {
+      console.log("wow");
+      $(this).toggleClass('active');
 
-  function closeAllSelect(elmnt) {
-    /* A function that will close all select boxes in the document,
-    except the current select box: */
-    var x, y, i, arrNo = [];
-    x = document.getElementsByClassName("select-items");
-    y = document.getElementsByClassName("select-selected");
-    for (i = 0; i < y.length; i++) {
-      if (elmnt == y[i]) {
-        arrNo.push(i)
+      //DO SOMETHING ABOUT THIS!!!
+      var currency = $(this).data('currency');
+      var actCurrency = currency.toUpperCase();
+      var value = data.rates[actCurrency];
+      console.log(actCurrency);
+
+
+      var infoHTML = '<div class="info info-' + currency + '">' +
+                       '<p>1 USD' + ' = ' +
+                       value +
+                       ' '+
+                       actCurrency +
+                       '</p>' +
+                     '</div>';
+
+      function getRandomInt(max) {
+        return Math.floor(Math.random() * Math.floor(max));
+      }
+
+      var to = getRandomInt(90);
+      var le = getRandomInt(80);
+
+      $('body').append(infoHTML);
+
+      var $info = $('.info-' + currency);
+
+      $info.css("top", to + 'vh');
+      $info.css("left", le + 'vw');
+
+      if ($(this).hasClass('active')) {
+        $info.css("visibility", 'visible');
       } else {
-        y[i].classList.remove("select-arrow-active");
+        $info.css("visibility", 'hidden');
       }
-    }
-    for (i = 0; i < x.length; i++) {
-      if (arrNo.indexOf(i)) {
-        x[i].classList.add("select-hide");
-      }
-    }
-  }
 
-  /* If the user clicks anywhere outside the select box,
-  then close all select boxes: */
-  document.addEventListener("click", closeAllSelect);
+      // $('.value').text();
+      // $('.currency').html();
+
+    });
+
+  });
+
 
 
 });

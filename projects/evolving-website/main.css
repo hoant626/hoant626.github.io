@@ -1,6 +1,8 @@
 body {
   background: #005F00;
   max-width: 100%;
+  height: 1500%;
+  max-height: 1500%;
   overflow-x: hidden;
 }
 
@@ -11,42 +13,63 @@ p {
   font-style: normal;
 }
 
-.info {
-  display: flex;
+.graph {
   position: fixed;
-  left: 10px;
-  top: 10px;
-  border: solid #EE72D3 5px;
-  padding-left: 10px;
-  background: #005F00;
-  z-index: 10;
+  width: 110vw;
+  left: 50%;
+  margin-left: -55vw;
+  top: 5vh;
+  z-index: -1;
 }
+
+.balls {
+  height: 1500vh;
+  max-height: 1500vh;
+  overflow: hidden;
+}
+
+.info {
+  position: fixed;
+  border: solid #EE72D3 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #005F00;
+  z-index: 3;
+}
+
 
 .ball {
   background: #EE72D3;
   border-radius: 50%;
   position: absolute;
+  z-index: 2;
 }
 
 .ball.active {
   background: none;
   background-image: url("assets/img/stripes.svg");
   background-repeat: repeat;
+  background-size: 100px 100px;
+  z-index: 1;
+}
+
+.ball:hover {
+  cursor: pointer;
 }
 
 /*location of balls*/
 
 .aud {
   left: 10vw;
-  top: 260vh;
+  top: 1206vh;
 }
 .bgn {
   left: 35vw;
-  top: 110vh;
+  top: 310vh;
 }
 .brl {
   left:20vw;
-  top: 20vh;
+  top: 50vh;
 }
 .cad {
   left: 70vw;
@@ -54,63 +77,63 @@ p {
 }
 .chf {
   left: 46vw;
-  top: 80vh;
+  top: 519vh;
 }
 .cny {
   left: 35vw;
-  top: 210vh;
+  top: 1047vh;
 }
 .czk {
   left: 75vw;
-  top: 90vh;
+  top: 657vh;
 }
 .dkk {
   left: 80vw;
-  top: 80vh;
+  top: 527vh;
 }
 .eur {
   left: 67vw;
-  top: 90vh;
+  top: 657vh;
 }
 .gbp {
   left: 67vw;
-  top: 70vh;
+  top: 575vh;
 }
 .hkd {
   left:25vw;
-  top: 230vh;
+  top: 1102vh;
 }
 .hrk {
   left: 50vw;
-  top: 90vh;
+  top: 657vh;
 }
 .huf {
   left: 55vw;
-  top: 100vh;
+  top: 579vh;
 }
 .idr {
   left: 13vw;
-  top: 230vh;
+  top: 827vh;
 }
 .ils {
   left: 27vw;
-  top: 125vh;
+  top: 662vh;
 }
 .inr {
   left: 25vw;
-  top: 170vh;
+  top: 909.5vh;
 }
 .isk {
   left: 95vw;
-  top: 50vh;
+  top: 170vh;
 }
 .jpy {
   left: 45vw;
-  top: 268vh;
+  top: 1234vh;
 }
 .krw {
   left: 45vw;
-  top: 255vh;
+  top: 898.5vh;
 }
 .mxn {
   left: 50vw;
@@ -118,115 +141,64 @@ p {
 }
 .myr {
   left:15vw;
-  top: 200vh;
+  top: 1036vh;
 }
 .nok {
   left: 80vw;
-  top: 80vh;
+  top: 521vh;
 }
 .nzd {
   left:1vw;
-  top: 300vh;
+  top: 1432vh;
 }
 .php {
   left: 20vw;
-  top: 245vh;
+  top: 1140vh;
 }
 .pln {
   left: 65vw;
-  top: 100vh;
+  top: 579vh;
 }
 .ron {
   left: 56vw;
-  top:110vh;
+  top:607vh;
 }
 .rub {
   left: 88vw;
-  top: 210vh;
+  top: 1052vh;
 }
 .sek {
   left: 90vw;
-  top: 100vh;
+  top: 576vh;
 }
 .sgd {
   left: 15vw;
-  top: 210vh;
+  top: 766.5vh;
 }
 .thb {
   left:23vw;
-  top: 200vh;
+  top: 1030vh;
 }
 .try {
   left: 35vw;
-  top: 125vh;
+  top: 667vh;
 }
 .zar {
   left: 11vw;
-  top: 100vh;
+  top: 602vh;
 }
 
-/*  SELECT BOX*/
-/* Dropup Button */
-/* The container must be positioned relative: */
-.custom-select {
-  position: relative;
-  font-family: lexia-mono, serif;
-  font-weight: 400;
-  font-style: normal;
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-.custom-select select {
-  display: none; /*hide original SELECT element: */
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #EE72D3;
+  border-radius: 2px;
 }
 
-.select-selected {
-  background-color: #005F00;
+::-webkit-scrollbar-thumb:window-inactive {
+   visibility:hidden;
 }
-
-/* Style the arrow inside the select element: */
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 25px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #EE72D3 transparent transparent transparent;
-}
-
-/* Point the arrow upwards when the select box is open (active): */
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #EE72D3 transparent;
-  top: 20px;
-}
-
-/* style the items (options), including the selected item: */
-.select-items div,.select-selected {
-  color: #EE72D3;
-  padding: 10px;
-  border: 1px solid transparent;
-  cursor: pointer;
-}
-
-/* Style items (options): */
-.select-items {
-  position: absolute;
-  background-color: #005F00;
-  border: solid #EE72D3 5px;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-}
-
-/* Hide the items when the select box is closed: */
-.select-hide {
-  display: none;
-}
-
-.select-items div:hover, .same-as-selected {
-  background-color: #EE72D3;
-  color: #005F00;
-}
-/* END OF SELECT BOX*/
