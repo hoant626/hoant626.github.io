@@ -1,70 +1,112 @@
-
 <!DOCTYPE html>
-
-<html lang="en-US">
-
+<html lang="en" dir="ltr">
   <head>
-
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://use.typekit.net/pzy0hih.css">
-    <link rel="stylesheet" href="index.css">
-    <title>Trudy Hoang</title>
-
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fcb2lug.css">
+    <title>LOST GALLERY</title>
   </head>
 
   <body>
 
-    <div class="parent">
-
-      <div class="child1">
-
-        <p><span class="yell">This is </span><span class="or">Trudy Hoang's </span><span class="yell">webpage</span>
-        <br><span class="yell">for </span><span class="or">Core Interaction. </span>
-        <br><span class="yell">Here are her projects:</span></p>
-
-        <ul>
-          <li><a href="projects/time-capsule/index.html">Time Capsule</a></li>
-          <li><a href="projects/maxim/index.html">Maxims</a></li>
-          <li><a href="projects/ama/index.html">AMA</a></li>
-          <li><a href="projects/evolving-website/index.html">Evolving Website</a></li>
-
-        </ul>
-
+    <div id="menu">
+      <div class="nav-right visible-xs">
+        <div class="button" id="btn">
+          <div class="bar top"></div>
+          <div class="bar middle"></div>
+          <div class="bar bottom"></div>
+        </div>
       </div>
 
-      <div class="child2">
+    <nav>
+      <div class="nav-right hidden-xs">
+        <div class="button" id="btn">
+          <div class="dot"></div>
+          <div class="clickbar"></div>
+          <div class="navbar">
+            <ul class="sidebar-list">
+              <li class="sidebar-item"><a href="/" class="sidebar-anchor">HOME</a></li>
+              <li class="sidebar-item"><a href="where-are-you/index.html" class="sidebar-anchor">WHERE ARE YOU?</a></li>
+              <li class="sidebar-item"><a href="what-do-you-know/index.html" class="sidebar-anchor">WHAT DO YOU KNOW?</a></li>
+              <li class="sidebar-item"><a href="where-can-you-find-it/index.html" class="sidebar-anchor">WHERE CAN YOU FIND IT?</a></li>
+              <li class="sidebar-item"><a href="if-you-like-this/index.html" class="sidebar-anchor">IF YOU LIKE THIS...</a></li>
+              <li class="sidebar-item"><a href="what-next/index.html" class="sidebar-anchor">WHAT NEXT?</a></li>
+            </ul>
+          </div>
+          <div class="bar top"></div>
+          <div class="bar middle"></div>
+          <div class="bar bottom"></div>
+        </div>
+      </div>
+    </nav>
+  </div>
 
-        <br><span class="yell">And these are her exercises:</span></p>
 
-        <ul>
-          <li><a href="projects/observing-navigation/index.html">Observing Navigation</a></li>
-          <li><a href="html-quiz/index.html">HTML Quiz</a>
-          <li>Wikipedia <a href="projects/wikipedia-markup/wiki1.html">1</a>, <a href="projects/wikipedia-markup/wiki2.html">2</a>, <a href="projects/wikipedia-markup/wiki3.html">3</a></li>
-          <li><a href="projects/flexbox-practice/index.html">Flexbox and Positioning Practice</a> and <a href="projects/flexbox-practice/geo.html">Geometric Abstraction Exercise</a>
-          <li><a href="projects/coding-from-life/sketch-1/index.html">Static Still Life</a> and <a href="projects/coding-from-life/sketch-2/index.html">Fluid Still Life</a>
-          <li><a href="projects/coding-from-life-archive/index.html">Still Life Archive</a>
-          <li><a href="projects/jsintro/index.html">Javascript Introduction</a>
-          <li><a href="projects/hover-demo/composition.html">Hover Composition</a>
-          <li><a href="projects/abstract-enviroment/index.html">Abstract Enviroment</a>
-          <li><a href="projects/documenting-work/index.html">Documenting Work</a>
-          <li><a href="projects/jquery-excercise/toggle-text/index.html">Toggle Text</a>, <a href="projects/jquery-excercise/animate-image/index.html">Animate Image</a>, <a href="projects/jquery-excercise/random-boxes/index.html">Random Boxes</a>, <a href="projects/jquery-excercise/keyboard-events/index.html">Keyboard Events</a>, <a href="projects/jquery-excercise/scrolling-events/index.html">Scrolling Events</a>, <a href="projects/jquery-excercise/click-events/index.html">Click Events</a>
-          <li><a href="projects/clock/index.html">Documenting Work</a>
-          <li><a href="projects/clock/index.html">Clock</a>
-          <li><a href="projects/weather/index.html">Weather</a>
-          <li><a href="projects/mad-lib/index.html">Mad Lib</a>
-          <li><a href="projects/posters/cotton.html">Poster</a>
-
-
-        </ul>
-
-        <div id="computer">
-          <img src="assets/img/giphy.gif" width="70px">
+      <div id="main">
+        <div class="section1">
+          <h1 id="title">LOST GALLERY</h1>
+          <p class="caption">A space to explore art that has been misplaced in history.</p>
+          <img src="style/svg/down.svg" alt="" class="down">
         </div>
 
-      </div>
+        <div class="section2">
+          <table class="navbutton-where navbutton">
+            <tr class='clickable-row' data-href='where-are-you.index.html'>
+              <td></td>
+              <td rowspan=2><img src="style/svg/you.svg"></td>
+            </tr>
+            <tr class='clickable-row' data-href='where-are-you/index.html'>
+              <td colspan=2><h2 class="navlink-where"><span class="h2big">WHERE</span></br><span class="h2small">ARE YOU?</span></h2></td>
+            </tr>
+          </table>
 
-    </div>
+          <table class="navbutton-know navbutton">
+            <tr class='clickable-row' data-href='what-do-you-know/index.html'>
+              <td></td>
+              <td rowspan=2><img src="style/svg/know.svg"></td>
+            </tr>
+            <tr class='clickable-row' data-href='what-do-you-know/index.html'>
+              <td colspan=2><h2 class="navlink-know"><span class="h2small">WHAT DO YOU</br>KNOW?</span></h2></td>
+            </tr>
+          </table>
 
+          <table class="navbutton-find navbutton">
+            <tr class='clickable-row' data-href='where-can-you-find-it/index.html'>
+              <td></td>
+              <td rowspan=2><img src="style/svg/find.svg"></td>
+            </tr>
+            <tr class='clickable-row' data-href='where-can-you-find-it/index.html'>
+              <td colspan=2><h2 class="navlink-find"><span class="h2small">WHERE CAN</br>YOU FIND IT?</span></h2></td>
+            </tr>
+          </table>
+
+          <table class="navbutton-like navbutton">
+            <tr class='clickable-row' data-href='if-you-like-this/index.html'>
+              <td></td>
+              <td rowspan=2><img src="style/svg/like.svg"></td>
+            </tr>
+            <tr class='clickable-row' data-href='if-you-like-this/index.html'>
+              <td colspan=2><h2 class="navlink-like"><span class="h2small">IF YOU </span><span class="h2big">LIKE</span></br><span class="h2small">THIS...</span></h2></td>
+            </tr>
+          </table>
+
+          <table class="navbutton-next navbutton">
+            <tr class='clickable-row' data-href='what-next/index.html'>
+              <td></td>
+              <td rowspan=2><img src="style/svg/next.svg"></td>
+            </tr>
+            <tr class='clickable-row' data-href='what-next/index.html'>
+              <td colspan=2><h2 class="navlink-next"><span class="h2small">WHAT </span><span class="h2big">NEXT?</span></h2></td>
+            </tr>
+          </table>
+
+        </div>
+
+        <div id="mobile">
+          <h1>LOST GALLERY IS NOT CURRENTLY MOBILE COMPATIBLE. PLEASE VIEW ON DESKTOP.</h1>
+        </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
-
 </html>
