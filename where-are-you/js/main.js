@@ -26,7 +26,6 @@ $(document).ready(function() {
       $(".info").addClass("loading");
       $('.info').html('Checking your location...');
 
-
     } else {
       x.innerHTML = "Geolocation is not supported by this browser.";
     }  });
@@ -35,6 +34,7 @@ $(document).ready(function() {
     //native land api
     var location = 'https://native-land.ca/api/index.php?maps=languages&position=' + position.coords.latitude + ',' + position.coords.longitude;
 
+    console.log(position)
     $.get(location, function(data) {
 
       console.log(data);

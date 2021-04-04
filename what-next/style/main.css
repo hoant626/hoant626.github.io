@@ -53,8 +53,8 @@ p{
   font-style: normal;
   text-align: center;
   color:black;
-  height: 80px;
-  width: 48px;
+  height: 60px;
+  width: 90px;
   text-decoration: none;
   background-color: #E4B28E;
   border: 2px solid black;
@@ -183,14 +183,14 @@ p{
 
 #colophon {
   width: 600px;
-  height: 400px;
+  height: 420px;
   background: #95AAB2;
   border: 2px solid black;
   position: absolute;
   left: 50%;
   margin-left: -324px;
   top:50%;
-  margin-top: -200px;
+  margin-top: -210px;
   padding-left: 24px;
   padding-right: 24px;
 }
