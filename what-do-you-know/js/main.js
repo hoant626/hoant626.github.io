@@ -54,8 +54,8 @@ console.log("ready")
 
 //click next
   $(".howmuch").click(function() {
-    $(".art-1.clicked").fadeOut(300);
-    jQuery.makeArray($(".art-1.clicked"))
+    $(".art-1").fadeOut(300);
+    jQuery.makeArray($(".art-1[data-showdiv]:not(.clicked)"))
       .map(i => i.attributes["data-showdiv"].value)
       .forEach((attribute) => {
         $(`#tag-${attribute.split('art-').join('')}`).fadeIn(300);
