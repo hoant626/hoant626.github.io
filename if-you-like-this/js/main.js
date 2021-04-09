@@ -18,12 +18,13 @@ $(document).ready(function() {
   });
 
 //overlay
-  $('#colophon-button').click(function() {
-     $('#overlay').fadeIn(300);
-  });
+  $(".tag").click(function() {
+    $(".overlay:visible").fadeOut(300);
+    $("#" + $(this).attr("data-showdiv")).fadeIn(300);
+  })
 
-  $('#exit').click(function() {
-     $('#overlay').fadeOut(300);
+  $('.exit').click(function() {
+     $(".overlay:visible").fadeOut(300);
   });
 
 });

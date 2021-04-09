@@ -49,7 +49,7 @@ $(document).ready(function() {
       $(".caption, #redirect").removeClass("hide");
 
 
-      $("a").attr("href", "https://google.com/search?q=" + locationTribe + "+art&tbm=isch");
+      $("#redirect").attr("href", "https://google.com/search?q=" + locationTribe + "+art&tbm=isch");
 
     });
   }
