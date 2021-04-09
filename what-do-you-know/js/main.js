@@ -54,9 +54,12 @@ console.log("ready")
 
 //click next
   $(".howmuch").click(function() {
-    //$("#" + $(this).attr("data-showdiv")).fadeIn(300);
-    $( $(".art-1").attr("data-showdiv")).not($(".clicked")).fadeIn(300);
     $(".art-1").fadeOut(300);
+    jQuery.makeArray($(".art-1[data-showdiv]:not(.clicked)"))
+      .map(i => i.attributes["data-showdiv"].value)
+      .forEach((attribute) => {
+        $(`#tag-${attribute.split('art-').join('')}`).fadeIn(300);
+      });
     $("html, body").animate({scrollTop: 0}, 1000);
   });
 
