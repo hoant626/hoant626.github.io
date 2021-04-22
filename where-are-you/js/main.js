@@ -24,7 +24,7 @@ $(document).ready(function() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(showPosition, showError);
       $(".info").addClass("loading");
-      $('.info').html('Checking your location...');
+      $('.info').html('Checking your location...make sure your location settings are on...');
 
     } else {
       x.innerHTML = "Geolocation is not supported by this browser.";

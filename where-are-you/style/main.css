@@ -439,3 +439,48 @@ body::-webkit-scrollbar-thumb
 {
   background-color: #000000;
 }
+
+@media only screen and (max-width: 600px) {
+  #main {
+    padding-left: 48px;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  h1{
+    font-size: 30pt;
+  }
+  p{
+    font-size: 16pt;
+  }
+
+  .section1{
+    width: 80vw;;
+  }
+
+  .loading {
+    font-size: 16pt;
+  }
+
+  #location-output1{
+    font-size: 30pt;
+  }
+  #location-output2{
+    font-size: 30pt;
+  }
+
+  #redirect {
+    height: 200px;
+    width: 185px;
+    font-size: 16pt;
+    line-height: 200px;
+  }
+
+  .caption{
+    left: 48px;
+    font-size: 12pt;
+    width: 40vw;
+  }
+}

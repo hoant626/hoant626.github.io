@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 
 console.log("ready")
@@ -38,11 +39,16 @@ console.log("ready")
 
 //change text in button
   $( ".howmuch" ).mouseover(function() {
-    $( ".next" ).removeClass( "hide" );
-    $( ".score, .slash, .outof" ).addClass( "hide" );
+    if($(".howmuch").hasClass("button-clicked")){
+      $( ".next, .score, .slash, .outof" ).addClass( "hide" );
+      $( ".back" ).removeClass( "hide" );
+    } else {
+      $( ".next" ).removeClass( "hide" );
+      $( ".back, .score, .slash, .outof" ).addClass( "hide" );
+    }
   });
   $( ".howmuch" ).mouseout(function() {
-    $( ".next" ).addClass( "hide" );
+    $( ".next, .back" ).addClass( "hide" );
     $( ".score, .slash, .outof" ).removeClass( "hide" );
   });
 
@@ -54,10 +60,22 @@ console.log("ready")
 
 //click next
   $(".howmuch").click(function() {
-    //$("#" + $(this).attr("data-showdiv")).fadeIn(300);
-    $( $(".art-1").attr("data-showdiv")).not($(".clicked")).fadeIn(300);
-    $(".art-1").fadeOut(300);
-    $("html, body").animate({scrollTop: 0}, 1000);
+    if($('.howmuch').hasClass('button-clicked')) {
+      location.reload();
+    } else {
+      $(this).toggleClass('button-clicked');
+      $(".art-1").fadeOut(300);
+      jQuery.makeArray($(".art-1[data-showdiv]:not(.clicked)"))
+        .map(i => i.attributes["data-showdiv"].value)
+        .forEach((attribute) => {
+          //$(`#tag-${attribute.split('art-').join('')}`).fadeIn(300);
+          $(`#tag-${attribute.split('art-').join('')}`).css({opacity: 0, display: 'flex'}).animate({
+                  opacity: 1
+              }, 1000);
+        });
+      $("html, body").animate({scrollTop: 0}, 1000);
+    }
   });
+
 
 });

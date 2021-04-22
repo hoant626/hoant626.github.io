@@ -41,7 +41,7 @@ p{
   background: #E4B28E;
   padding-left: 15vw;
   z-index: 1;
-  height: 210vh;
+  height: 240vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -106,6 +106,7 @@ p{
   display: inline;
   float: left;
   border-radius: 20px;
+  width: 520px;
 }
 
 .zine-text{
@@ -165,6 +166,21 @@ p{
 
 .row:hover {
   background:#95AAB2;
+}
+
+.ackno {
+    margin-top: 100px;
+}
+
+.contact {
+  color: black;
+  font-weight: bold;
+}
+
+.contact:hover {
+  font-family: freight-sans-pro, sans-serif;
+  font-weight: 500;
+  font-style: italic;
 }
 
 #overlay {
