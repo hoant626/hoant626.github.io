@@ -50,13 +50,13 @@ p{
   padding-top: 2vh;
   text-align: left;
   width: 900px;
-  height: 100vh;
+  height: 130vh;
 }
 
 #grid {
   display: grid;
   width: 72vw;
-  height: 120vh;
+  height: 130vh;
   border: 2px black solid;
   grid-template-columns: repeat(3, 1fr);
 }
